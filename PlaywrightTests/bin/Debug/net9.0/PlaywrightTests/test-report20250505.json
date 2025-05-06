@@ -1,0 +1,9 @@
+2025-05-05 20:42:00.809 +06:00 [INF] <div class='test'><h2>Test: SampleAPITest2</h2><p>Started at: "2025-05-05T20:42:00.8093526+06:00"</p>
+2025-05-05 20:42:00.840 +06:00 [INF] <div class='step'>Making GET request to API</div>
+2025-05-05 20:42:02.439 +06:00 [INF] <div class='pass'>✓ Test Passed: SampleAPITest2 at "2025-05-05T20:42:02.4390782+06:00"</div></div>
+2025-05-05 20:47:32.169 +06:00 [INF] <div class='test'><div class='test-header'><div class='test-name'>Test: SampleAPITest2</div><div class='test-time'>Started at: "2025-05-05T20:47:32.1685848+06:00"</div></div>
+2025-05-05 20:47:32.199 +06:00 [INF] <div class='step'>→ Making GET request to API</div>
+2025-05-05 20:47:32.718 +06:00 [INF] <div class='pass'>✓ Test Passed: SampleAPITest2<br/>Completed at: "2025-05-05T20:47:32.7183680+06:00"</div></div>
+2025-05-05 20:50:35.265 +06:00 [INF] <div class='test'><div class='test-header'><div class='test-name'>Test: SampleAPITest2</div><div class='test-time'>Started at: "2025-05-05T20:50:35.2645425+06:00"</div></div>
+2025-05-05 20:50:35.296 +06:00 [INF] <div class='step'>→ Making GET request to API</div>
+2025-05-05 20:50:35.445 +06:00 [INF] <div class='pass'>✓ Test Passed: SampleAPITest2<br/>Completed at: "2025-05-05T20:50:35.4458079+06:00"</div></div>

@@ -1,0 +1,11 @@
+{
+  "allure": {
+    "directory": "allure-results",
+    "links": [
+      {
+        "type": "issue",
+        "urlTemplate": "https://example.org/browse/%s"
+      }
+    ]
+  }
+} 

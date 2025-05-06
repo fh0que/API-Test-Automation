@@ -1,0 +1,115 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TestRun id="d522b48d-61cb-4568-b939-d81e1c71f978" name="fazlul@FAZLULHOQUELAP 2025-05-05 16:52:31" runUser="ENOSISBD\fazlul" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
+  <Times creation="2025-05-05T16:52:31.8030825+06:00" queuing="2025-05-05T16:52:31.8030829+06:00" start="2025-05-05T16:52:24.2819366+06:00" finish="2025-05-05T16:52:34.0243531+06:00" />
+  <TestSettings name="default" id="20a1f8b1-15fe-4eba-b3bd-c4d1c9c55959">
+    <Deployment runDeploymentRoot="fazlul_FAZLULHOQUELAP_2025-05-05_16_52_31" />
+  </TestSettings>
+  <Results>
+    <UnitTestResult executionId="e8109c9d-c672-456c-b4eb-8b04e24a3232" testId="d91d1b82-b0aa-2b74-3ccb-d2136785b91e" testName="PutRequestTests.UpdatePost_ShouldReturn200" computerName="FAZLULHOQUELAP" duration="00:00:07.7400696" startTime="2025-05-05T16:52:24.7499361+06:00" endTime="2025-05-05T16:52:32.4967457+06:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="e8109c9d-c672-456c-b4eb-8b04e24a3232" />
+    <UnitTestResult executionId="a4f314d5-295e-4214-9d28-e69834b25f87" testId="5fb9493a-a260-08be-0dd9-5db264b2e6f2" testName="DeleteRequestTests.DeletePost_ShouldReturn200" computerName="FAZLULHOQUELAP" duration="00:00:07.7430086" startTime="2025-05-05T16:52:24.7486786+06:00" endTime="2025-05-05T16:52:32.4996254+06:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="a4f314d5-295e-4214-9d28-e69834b25f87" />
+    <UnitTestResult executionId="49ddc6df-b8f4-48f1-b16a-3ca831e81cb1" testId="ebde66c5-83d4-511b-80be-adee8a9efdc5" testName="GetRequestTests.GetPost_ShouldMatchSchema" computerName="FAZLULHOQUELAP" duration="00:00:06.9989272" startTime="2025-05-05T16:52:24.7498106+06:00" endTime="2025-05-05T16:52:31.7559469+06:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="49ddc6df-b8f4-48f1-b16a-3ca831e81cb1" />
+    <UnitTestResult executionId="d31b5e48-5382-4ae8-be23-e01d44c2ca87" testId="0f1c8a20-a6fa-80ce-3dd2-b77fb2d53773" testName="PlaywrightTests.Tests.SampleTest.SampleAPITest" computerName="FAZLULHOQUELAP" duration="00:00:06.9429598" startTime="2025-05-05T16:52:24.7498701+06:00" endTime="2025-05-05T16:52:31.7045628+06:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="d31b5e48-5382-4ae8-be23-e01d44c2ca87" />
+    <UnitTestResult executionId="69e2d3c9-2555-4294-9932-8dca1ba7ae0f" testId="53cab9ae-63b3-1697-2d0f-6b2f180ce1b4" testName="PostRequestTests.CreatePost_ShouldMatchSchema" computerName="FAZLULHOQUELAP" duration="00:00:07.7500521" startTime="2025-05-05T16:52:24.7499053+06:00" endTime="2025-05-05T16:52:32.5071987+06:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="69e2d3c9-2555-4294-9932-8dca1ba7ae0f" />
+    <UnitTestResult executionId="b6e528d9-1b8f-478a-bb67-c6a6dabe1c27" testId="1a4a8563-75de-4814-d65c-7dcc114af496" testName="PostRequestTests.CreatePost_ShouldReturn201" computerName="FAZLULHOQUELAP" duration="00:00:01.4295195" startTime="2025-05-05T16:52:32.5075083+06:00" endTime="2025-05-05T16:52:33.9399069+06:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="b6e528d9-1b8f-478a-bb67-c6a6dabe1c27" />
+    <UnitTestResult executionId="1dcc1fd6-fda3-4b4a-9507-f9dd82808854" testId="f8272eb7-aba2-0cbc-0b64-d52395f1da05" testName="GetRequestTests.GetPost_ShouldReturn200" computerName="FAZLULHOQUELAP" duration="00:00:00.4645920" startTime="2025-05-05T16:52:31.7854439+06:00" endTime="2025-05-05T16:52:32.2226477+06:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="1dcc1fd6-fda3-4b4a-9507-f9dd82808854" />
+  </Results>
+  <TestDefinitions>
+    <UnitTest name="PostRequestTests.CreatePost_ShouldReturn201" storage="c:\users\fazlul\desktop\api\apic\playwrighttests\bin\debug\net9.0\playwrighttests.dll" id="1a4a8563-75de-4814-d65c-7dcc114af496">
+      <Execution id="b6e528d9-1b8f-478a-bb67-c6a6dabe1c27" />
+      <TestMethod codeBase="C:\Users\fazlul\Desktop\API\APIC\PlaywrightTests\bin\Debug\net9.0\PlaywrightTests.dll" adapterTypeName="executor://xunit/VsTestRunner3/netcore/" className="PostRequestTests" name="CreatePost_ShouldReturn201" />
+    </UnitTest>
+    <UnitTest name="PlaywrightTests.Tests.SampleTest.SampleAPITest" storage="c:\users\fazlul\desktop\api\apic\playwrighttests\bin\debug\net9.0\playwrighttests.dll" id="0f1c8a20-a6fa-80ce-3dd2-b77fb2d53773">
+      <Execution id="d31b5e48-5382-4ae8-be23-e01d44c2ca87" />
+      <TestMethod codeBase="C:\Users\fazlul\Desktop\API\APIC\PlaywrightTests\bin\Debug\net9.0\PlaywrightTests.dll" adapterTypeName="executor://xunit/VsTestRunner3/netcore/" className="PlaywrightTests.Tests.SampleTest" name="SampleAPITest" />
+    </UnitTest>
+    <UnitTest name="GetRequestTests.GetPost_ShouldMatchSchema" storage="c:\users\fazlul\desktop\api\apic\playwrighttests\bin\debug\net9.0\playwrighttests.dll" id="ebde66c5-83d4-511b-80be-adee8a9efdc5">
+      <Execution id="49ddc6df-b8f4-48f1-b16a-3ca831e81cb1" />
+      <TestMethod codeBase="C:\Users\fazlul\Desktop\API\APIC\PlaywrightTests\bin\Debug\net9.0\PlaywrightTests.dll" adapterTypeName="executor://xunit/VsTestRunner3/netcore/" className="GetRequestTests" name="GetPost_ShouldMatchSchema" />
+    </UnitTest>
+    <UnitTest name="GetRequestTests.GetPost_ShouldReturn200" storage="c:\users\fazlul\desktop\api\apic\playwrighttests\bin\debug\net9.0\playwrighttests.dll" id="f8272eb7-aba2-0cbc-0b64-d52395f1da05">
+      <Execution id="1dcc1fd6-fda3-4b4a-9507-f9dd82808854" />
+      <TestMethod codeBase="C:\Users\fazlul\Desktop\API\APIC\PlaywrightTests\bin\Debug\net9.0\PlaywrightTests.dll" adapterTypeName="executor://xunit/VsTestRunner3/netcore/" className="GetRequestTests" name="GetPost_ShouldReturn200" />
+    </UnitTest>
+    <UnitTest name="PostRequestTests.CreatePost_ShouldMatchSchema" storage="c:\users\fazlul\desktop\api\apic\playwrighttests\bin\debug\net9.0\playwrighttests.dll" id="53cab9ae-63b3-1697-2d0f-6b2f180ce1b4">
+      <Execution id="69e2d3c9-2555-4294-9932-8dca1ba7ae0f" />
+      <TestMethod codeBase="C:\Users\fazlul\Desktop\API\APIC\PlaywrightTests\bin\Debug\net9.0\PlaywrightTests.dll" adapterTypeName="executor://xunit/VsTestRunner3/netcore/" className="PostRequestTests" name="CreatePost_ShouldMatchSchema" />
+    </UnitTest>
+    <UnitTest name="DeleteRequestTests.DeletePost_ShouldReturn200" storage="c:\users\fazlul\desktop\api\apic\playwrighttests\bin\debug\net9.0\playwrighttests.dll" id="5fb9493a-a260-08be-0dd9-5db264b2e6f2">
+      <Execution id="a4f314d5-295e-4214-9d28-e69834b25f87" />
+      <TestMethod codeBase="C:\Users\fazlul\Desktop\API\APIC\PlaywrightTests\bin\Debug\net9.0\PlaywrightTests.dll" adapterTypeName="executor://xunit/VsTestRunner3/netcore/" className="DeleteRequestTests" name="DeletePost_ShouldReturn200" />
+    </UnitTest>
+    <UnitTest name="PutRequestTests.UpdatePost_ShouldReturn200" storage="c:\users\fazlul\desktop\api\apic\playwrighttests\bin\debug\net9.0\playwrighttests.dll" id="d91d1b82-b0aa-2b74-3ccb-d2136785b91e">
+      <Execution id="e8109c9d-c672-456c-b4eb-8b04e24a3232" />
+      <TestMethod codeBase="C:\Users\fazlul\Desktop\API\APIC\PlaywrightTests\bin\Debug\net9.0\PlaywrightTests.dll" adapterTypeName="executor://xunit/VsTestRunner3/netcore/" className="PutRequestTests" name="UpdatePost_ShouldReturn200" />
+    </UnitTest>
+  </TestDefinitions>
+  <TestEntries>
+    <TestEntry testId="d91d1b82-b0aa-2b74-3ccb-d2136785b91e" executionId="e8109c9d-c672-456c-b4eb-8b04e24a3232" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="5fb9493a-a260-08be-0dd9-5db264b2e6f2" executionId="a4f314d5-295e-4214-9d28-e69834b25f87" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="ebde66c5-83d4-511b-80be-adee8a9efdc5" executionId="49ddc6df-b8f4-48f1-b16a-3ca831e81cb1" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="0f1c8a20-a6fa-80ce-3dd2-b77fb2d53773" executionId="d31b5e48-5382-4ae8-be23-e01d44c2ca87" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="53cab9ae-63b3-1697-2d0f-6b2f180ce1b4" executionId="69e2d3c9-2555-4294-9932-8dca1ba7ae0f" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="1a4a8563-75de-4814-d65c-7dcc114af496" executionId="b6e528d9-1b8f-478a-bb67-c6a6dabe1c27" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="f8272eb7-aba2-0cbc-0b64-d52395f1da05" executionId="1dcc1fd6-fda3-4b4a-9507-f9dd82808854" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+  </TestEntries>
+  <TestLists>
+    <TestList name="Results Not in a List" id="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestList name="All Loaded Results" id="19431567-8539-422a-85d7-44ee4e166bda" />
+  </TestLists>
+  <ResultSummary outcome="Completed">
+    <Counters total="7" executed="7" passed="7" failed="0" error="0" timeout="0" aborted="0" inconclusive="0" passedButRunAborted="0" notRunnable="0" notExecuted="0" disconnected="0" warning="0" completed="0" inProgress="0" pending="0" />
+    <Output>
+      <StdOut>[xUnit.net 00:00:00.00] xUnit.net VSTest Adapter v3.0.2+dd36e86129 (64-bit .NET 9.0.0)&#xD;
+[xUnit.net 00:00:00.06]   Discovering: PlaywrightTests&#xD;
+[xUnit.net 00:00:00.09]   Discovered:  PlaywrightTests&#xD;
+[xUnit.net 00:00:00.11]   Starting:    PlaywrightTests&#xD;
+[16:52:31 INF] Request: GET https://jsonplaceholder.typicode.com/posts/1 | Body: null&#xD;
+[16:52:31 INF] Request: DELETE https://jsonplaceholder.typicode.com/posts/1 | Body: null&#xD;
+[16:52:31 INF] Request: GET https://jsonplaceholder.typicode.com/posts/1 | Body: null&#xD;
+[16:52:31 INF] Request: POST https://jsonplaceholder.typicode.com/posts | Body: {"title":"foo","body":"bar","userId":1}&#xD;
+[16:52:31 INF] Request: PUT https://jsonplaceholder.typicode.com/posts/1 | Body: {"title":"updated title","body":"updated body","userId":1}&#xD;
+[16:52:31 INF] Response Status: 200 | Body: {&#xD;
+  "userId": 1,&#xD;
+  "id": 1,&#xD;
+  "title": "sunt aut facere repellat provident occaecati excepturi optio reprehenderit",&#xD;
+  "body": "quia et suscipit\nsuscipit recusandae consequuntur expedita et cum\nreprehenderit molestiae ut ut quas totam\nnostrum rerum est autem sunt rem eveniet architecto"&#xD;
+}&#xD;
+[16:52:31 INF] Response Status: 200 | Body: {&#xD;
+  "userId": 1,&#xD;
+  "id": 1,&#xD;
+  "title": "sunt aut facere repellat provident occaecati excepturi optio reprehenderit",&#xD;
+  "body": "quia et suscipit\nsuscipit recusandae consequuntur expedita et cum\nreprehenderit molestiae ut ut quas totam\nnostrum rerum est autem sunt rem eveniet architecto"&#xD;
+}&#xD;
+[16:52:31 INF] Response received: {"Headers": {"date": "Mon, 05 May 2025 10:52:31 GMT", "content-type": "application/json; charset=utf-8", "transfer-encoding": "chunked", "connection": "keep-alive", "server": "cloudflare", "report-to": "{\"group\":\"heroku-nel\",\"max_age\":3600,\"endpoints\":[{\"url\":\"https://nel.heroku.com/reports?ts=1745348609&amp;sid=e11707d5-02a7-43ef-b45e-2cf4d2036f7d&amp;s=fUpQ%2BCt%2BGByz28Oq9a%2FWgnUgwhz1LXd17QxjTZTOlqY%3D\"}]}", "reporting-endpoints": "heroku-nel=https://nel.heroku.com/reports?ts=1745348609&amp;sid=e11707d5-02a7-43ef-b45e-2cf4d2036f7d&amp;s=fUpQ%2BCt%2BGByz28Oq9a%2FWgnUgwhz1LXd17QxjTZTOlqY%3D", "nel": "{\"report_to\":\"heroku-nel\",\"max_age\":3600,\"success_fraction\":0.005,\"failure_fraction\":0.05,\"response_headers\":[\"Via\"]}", "x-powered-by": "Express", "x-ratelimit-limit": "1000", "x-ratelimit-remaining": "999", "x-ratelimit-reset": "1745348653", "vary": "Origin, Accept-Encoding", "access-control-allow-credentials": "true", "cache-control": "max-age=43200", "pragma": "no-cache", "expires": "-1", "x-content-type-options": "nosniff", "etag": "W/\"124-yiKdLzqO5gfBrJFrcdJ8Yq0LGnU\"", "via": "1.1 vegur", "age": "5774", "cf-cache-status": "HIT", "content-encoding": "br", "cf-ray": "93afb05a2d2fa485-DAC", "alt-svc": "h3=\":443\"; ma=86400"}, "HeadersArray": [{"Name": "Date", "Value": "Mon, 05 May 2025 10:52:31 GMT", "$type": "Header"}, {"Name": "Content-Type", "Value": "application/json; charset=utf-8", "$type": "Header"}, {"Name": "Transfer-Encoding", "Value": "chunked", "$type": "Header"}, {"Name": "Connection", "Value": "keep-alive", "$type": "Header"}, {"Name": "Server", "Value": "cloudflare", "$type": "Header"}, {"Name": "Report-To", "Value": "{\"group\":\"heroku-nel\",\"max_age\":3600,\"endpoints\":[{\"url\":\"https://nel.heroku.com/reports?ts=1745348609&amp;sid=e11707d5-02a7-43ef-b45e-2cf4d2036f7d&amp;s=fUpQ%2BCt%2BGByz28Oq9a%2FWgnUgwhz1LXd17QxjTZTOlqY%3D\"}]}", "$type": "Header"}, {"Name": "Reporting-Endpoints", "Value": "heroku-nel=https://nel.heroku.com/reports?ts=1745348609&amp;sid=e11707d5-02a7-43ef-b45e-2cf4d2036f7d&amp;s=fUpQ%2BCt%2BGByz28Oq9a%2FWgnUgwhz1LXd17QxjTZTOlqY%3D", "$type": "Header"}, {"Name": "Nel", "Value": "{\"report_to\":\"heroku-nel\",\"max_age\":3600,\"success_fraction\":0.005,\"failure_fraction\":0.05,\"response_headers\":[\"Via\"]}", "$type": "Header"}, {"Name": "X-Powered-By", "Value": "Express", "$type": "Header"}, {"Name": "X-Ratelimit-Limit", "Value": "1000", "$type": "Header"}, {"Name": "X-Ratelimit-Remaining", "Value": "999", "$type": "Header"}, {"Name": "X-Ratelimit-Reset", "Value": "1745348653", "$type": "Header"}, {"Name": "Vary", "Value": "Origin, Accept-Encoding", "$type": "Header"}, {"Name": "Access-Control-Allow-Credentials", "Value": "true", "$type": "Header"}, {"Name": "Cache-Control", "Value": "max-age=43200", "$type": "Header"}, {"Name": "Pragma", "Value": "no-cache", "$type": "Header"}, {"Name": "Expires", "Value": "-1", "$type": "Header"}, {"Name": "X-Content-Type-Options", "Value": "nosniff", "$type": "Header"}, {"Name": "Etag", "Value": "W/\"124-yiKdLzqO5gfBrJFrcdJ8Yq0LGnU\"", "$type": "Header"}, {"Name": "Via", "Value": "1.1 vegur", "$type": "Header"}, {"Name": "Age", "Value": "5774", "$type": "Header"}, {"Name": "Cf-Cache-Status", "Value": "HIT", "$type": "Header"}, {"Name": "Content-Encoding", "Value": "br", "$type": "Header"}, {"Name": "CF-RAY", "Value": "93afb05a2d2fa485-DAC", "$type": "Header"}, {"Name": "alt-svc", "Value": "h3=\":443\"; ma=86400", "$type": "Header"}], "Ok": true, "Status": 200, "StatusText": "OK", "Url": "https://jsonplaceholder.typicode.com/posts/1", "$type": "APIResponse"}&#xD;
+[16:52:32 INF] Request: GET https://jsonplaceholder.typicode.com/posts/1 | Body: null&#xD;
+[16:52:32 INF] Response Status: 200 | Body: {&#xD;
+  "userId": 1,&#xD;
+  "id": 1,&#xD;
+  "title": "sunt aut facere repellat provident occaecati excepturi optio reprehenderit",&#xD;
+  "body": "quia et suscipit\nsuscipit recusandae consequuntur expedita et cum\nreprehenderit molestiae ut ut quas totam\nnostrum rerum est autem sunt rem eveniet architecto"&#xD;
+}&#xD;
+[16:52:32 INF] Response Status: 200 | Body: {&#xD;
+  "title": "updated title",&#xD;
+  "body": "updated body",&#xD;
+  "userId": 1,&#xD;
+  "id": 1&#xD;
+}&#xD;
+[16:52:32 INF] Response Status: 200 | Body: {}&#xD;
+[16:52:32 INF] Response Status: 201 | Body: {&#xD;
+  "title": "foo",&#xD;
+  "body": "bar",&#xD;
+  "userId": 1,&#xD;
+  "id": 101&#xD;
+}&#xD;
+[16:52:33 INF] Request: POST https://jsonplaceholder.typicode.com/posts | Body: {"title":"foo","body":"bar","userId":1}&#xD;
+[16:52:33 INF] Response Status: 201 | Body: {&#xD;
+  "title": "foo",&#xD;
+  "body": "bar",&#xD;
+  "userId": 1,&#xD;
+  "id": 101&#xD;
+}&#xD;
+[xUnit.net 00:00:09.32]   Finished:    PlaywrightTests&#xD;
+</StdOut>
+    </Output>
+  </ResultSummary>
+</TestRun>

@@ -1,0 +1,85 @@
+[
+  {
+    "Name": "CreatePost_ShouldMatchSchema",
+    "Status": "",
+    "StartTime": "2025-05-06 23:31:35",
+    "EndTime": "",
+    "Logs": [
+      "[INFO] Starting test: CreatePost_ShouldMatchSchema"
+    ]
+  },
+  {
+    "Name": "SampleAPITest2",
+    "Status": "",
+    "StartTime": "2025-05-06 23:31:35",
+    "EndTime": "",
+    "Logs": [
+      "[INFO] Starting test: SampleAPITest2"
+    ]
+  },
+  {
+    "Name": "Getcomments_ShouldReturn200",
+    "Status": "",
+    "StartTime": "2025-05-06 23:31:35",
+    "EndTime": "",
+    "Logs": [
+      "[INFO] Starting test: Getcomments_ShouldReturn200"
+    ]
+  },
+  {
+    "Name": "UpdatePost_ShouldReturn200",
+    "Status": "PASS",
+    "StartTime": "2025-05-06 23:31:35",
+    "EndTime": "2025-05-06 23:31:39",
+    "Logs": [
+      "[INFO] Starting test: UpdatePost_ShouldReturn200",
+      "[REQUEST] Request: DELETE posts/1",
+      "[REQUEST] Request: PUT posts/1",
+      "[REQUEST] Request Body: {\u0022title\u0022:\u0022updated title\u0022,\u0022body\u0022:\u0022updated body\u0022,\u0022userId\u0022:1}",
+      "[REQUEST] Request: POST posts",
+      "[REQUEST] Request Body: {\u0022title\u0022:\u0022foo\u0022,\u0022body\u0022:\u0022bar\u0022,\u0022userId\u0022:1}",
+      "[REQUEST] Request: GET comments/2",
+      "[RESPONSE] Status: 200",
+      "[RESPONSE] Body: {\n  \u0022postId\u0022: 1,\n  \u0022id\u0022: 2,\n  \u0022name\u0022: \u0022quo vero reiciendis velit similique earum\u0022,\n  \u0022email\u0022: \u0022Jayne_Kuhic@sydney.com\u0022,\n  \u0022body\u0022: \u0022est natus enim nihil est dolore omnis voluptatem numquam\\net omnis occaecati quod ullam at\\nvoluptatem error expedita pariatur\\nnihil sint nostrum voluptatem reiciendis et\u0022\n}",
+      "[PASS] Successfully retrieved comment with ID 2. Status: 200",
+      "[RESPONSE] Status: 201",
+      "[RESPONSE] Body: {\n  \u0022title\u0022: \u0022foo\u0022,\n  \u0022body\u0022: \u0022bar\u0022,\n  \u0022userId\u0022: 1,\n  \u0022id\u0022: 101\n}",
+      "[INFO] Validating email format: ",
+      "[FAIL] Email is null or empty",
+      "[RESPONSE] Status: 200",
+      "[RESPONSE] Body: {}",
+      "[RESPONSE] Status: 200",
+      "[RESPONSE] Body: {\n  \u0022title\u0022: \u0022updated title\u0022,\n  \u0022body\u0022: \u0022updated body\u0022,\n  \u0022userId\u0022: 1,\n  \u0022id\u0022: 1\n}",
+      "[FAIL] Email validation failed: Email cannot be null or empty",
+      "[PASS] Test UpdatePost_ShouldReturn200 completed successfully",
+      "[FAIL] Test Getcomments_ShouldReturn200 failed: Email cannot be null or empty",
+      "[PASS] Schema validation passed",
+      "[REQUEST] Request: GET posts/1",
+      "[RESPONSE] Status: 200",
+      "[RESPONSE] Body: {\n  \u0022userId\u0022: 1,\n  \u0022id\u0022: 1,\n  \u0022title\u0022: \u0022sunt aut facere repellat provident occaecati excepturi optio reprehenderit\u0022,\n  \u0022body\u0022: \u0022quia et suscipit\\nsuscipit recusandae consequuntur expedita et cum\\nreprehenderit molestiae ut ut quas totam\\nnostrum rerum est autem sunt rem eveniet architecto\u0022\n}"
+    ]
+  },
+  {
+    "Name": "CreatePost_ShouldReturn201",
+    "Status": "PASS",
+    "StartTime": "2025-05-06 23:31:40",
+    "EndTime": "2025-05-06 23:31:41",
+    "Logs": [
+      "[INFO] Starting test: CreatePost_ShouldReturn201",
+      "[REQUEST] Request: PUT posts/1",
+      "[REQUEST] Request Body: {\u0022title\u0022:\u0022updated title\u0022,\u0022body\u0022:\u0022updated body\u0022,\u0022userId\u0022:1}",
+      "[RESPONSE] Status: 200",
+      "[RESPONSE] Body: {\n  \u0022title\u0022: \u0022updated title\u0022,\n  \u0022body\u0022: \u0022updated body\u0022,\n  \u0022userId\u0022: 1,\n  \u0022id\u0022: 1\n}",
+      "[REQUEST] Request: POST posts",
+      "[REQUEST] Request Body: {\u0022title\u0022:\u0022foo\u0022,\u0022body\u0022:\u0022bar\u0022,\u0022userId\u0022:1}",
+      "[RESPONSE] Status: 201",
+      "[RESPONSE] Body: {\n  \u0022title\u0022: \u0022foo\u0022,\n  \u0022body\u0022: \u0022bar\u0022,\n  \u0022userId\u0022: 1,\n  \u0022id\u0022: 101\n}",
+      "[PASS] Test CreatePost_ShouldReturn201 completed successfully",
+      "[REQUEST] Request: POST posts",
+      "[REQUEST] Request Body: {\u0022title\u0022:\u0022foo\u0022,\u0022body\u0022:\u0022bar\u0022,\u0022userId\u0022:1}",
+      "[RESPONSE] Status: 201",
+      "[RESPONSE] Body: {\n  \u0022title\u0022: \u0022foo\u0022,\n  \u0022body\u0022: \u0022bar\u0022,\n  \u0022userId\u0022: 1,\n  \u0022id\u0022: 101\n}",
+      "[PASS] Test SampleAPITest2 completed successfully"
+    ]
+  }
+]

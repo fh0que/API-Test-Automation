@@ -1,0 +1,22 @@
+=== Test Started: Test Run Started ===
+=== Test Started: SampleAPITest2 ===
+Response Status: 200 | Body: {}
+Response Status: 200 | Body: {
+  "userId": 1,
+  "id": 1,
+  "title": "sunt aut facere repellat provident occaecati excepturi optio reprehenderit",
+  "body": "quia et suscipit\nsuscipit recusandae consequuntur expedita et cum\nreprehenderit molestiae ut ut quas totam\nnostrum rerum est autem sunt rem eveniet architecto"
+}
+Response Status: 200 | Body: {
+  "title": "updated title",
+  "body": "updated body",
+  "userId": 1,
+  "id": 1
+}
+Response Status: 201 | Body: {
+  "title": "foo",
+  "body": "bar",
+  "userId": 1,
+  "id": 101
+}
+=== Test Ended: SampleAPITest2 - PASSED ===
