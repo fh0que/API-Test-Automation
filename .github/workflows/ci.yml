@@ -1,0 +1,38 @@
+name: Run API Tests
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  test:
+    runs-on: windows-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Setup .NET
+        uses: actions/setup-dotnet@v4
+        with:
+          dotnet-version: '9.0.x' # or your project's .NET version
+
+      - name: Restore NuGet packages
+        run: dotnet restore
+
+      - name: Install Playwright Browsers
+        run: pwsh bin\Debug\net9.0\playwright.ps1 install
+
+      - name: Build project
+        run: dotnet build --configuration Release
+
+      - name: Run tests
+        run: dotnet test --logger "trx;LogFileName=test_results.trx" --results-directory test-results
+
+      - name: Upload Test Results
+        uses: actions/upload-artifact@v4
+        with:
+          name: test-results
+          path: test-results
