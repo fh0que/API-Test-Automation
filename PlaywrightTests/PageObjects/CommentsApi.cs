@@ -5,12 +5,21 @@ using System.Threading.Tasks;
 using Microsoft.Playwright;
 using DotNetEnv;
 using Xunit;
+using PlaywrightTests.Utilities;
 
 namespace PlaywrightTests.PageObjects
 {
-    public class CommentsPage(ApiClient apiClient)
+    public class CommentsPage
     {
-        private readonly ApiClient _apiClient = apiClient;
+        
+        private readonly ApiClient _apiClient;
+
+        public CommentsPage (ApiClient apiClient)
+        {
+            _apiClient = apiClient;
+        }
+
+    
 
         public async Task<IAPIResponse> GetCommentAsync(int commentId)
         {

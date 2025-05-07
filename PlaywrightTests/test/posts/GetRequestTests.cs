@@ -2,20 +2,23 @@ using System.Threading.Tasks;
 using Microsoft.Playwright;
 using Xunit;
 using Serilog;
+using PlaywrightTests.PageObjects;
+
+namespace PlaywrightTests.test.posts;
 
 public class GetRequestTests : TBase
 {
-    private readonly PostPage _postPage;
+    private readonly PostsApi _postsApi;
 
     public GetRequestTests()
     {
-        _postPage = new PostPage(ApiClient);
+        _postsApi = new PostsApi(ApiClient);
     }
 
     [Fact]
     public async Task GetPost_ShouldReturn200()
     {
-        var response = await _postPage.GetPostAsync(1);
+        var response = await _postsApi.GetPostAsync(1);
         Assert.Equal(200, response.Status);
         if (response.Status != 200)
         {
@@ -23,11 +26,11 @@ public class GetRequestTests : TBase
         }
     }
 
-     [Fact]
+    [Fact]
     public async Task GetPost_ShouldMatchSchema()
     {
         // Get response from API
-        var response = await _postPage.GetPostAsync(1);
+        var response = await _postsApi.GetPostAsync(1);
         Assert.Equal(200, response.Status);
 
         // Parse response body

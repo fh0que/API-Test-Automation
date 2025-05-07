@@ -1,0 +1,966 @@
+
+
+<!DOCTYPE html>
+<html>
+
+<head>
+ <meta charset="utf-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+ <title>API Test Report</title>
+ <link rel="apple-touch-icon" href="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@c439bdbc7bade3d85af3b90e9e69c30ebc87445f/commons/img/logo.png">
+ <link rel="shortcut icon" href="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@c439bdbc7bade3d85af3b90e9e69c30ebc87445f/commons/img/logo.png">
+ <link href="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@78fa5a2421587b8228150e93142e5ba97178e85b/spark/css/spark-style.css" rel="stylesheet" />
+ <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+ <script src="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@78fa5a2421587b8228150e93142e5ba97178e85b/spark/js/jsontree.js"></script>
+ <style></style>
+</head>
+<body class="spa  dark">
+ <div class="app">
+  <div class="layout">
+   <div class="header navbar">
+ <div class="vheader">
+  <div class="nav-logo">
+   <a href="#">
+	 <div class="logo" style="background-image: url('https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@c43b89d03a7c43dae8bb8f0f078bad1997af6b3b/commons/img/logo.png')"></div>
+   </a>
+  </div>
+  <ul class="nav-left">
+   <li class="search-box">
+	<a class="search-toggle" href="#"><i class="search-icon fa fa-search"></i><i class="search-icon-close fa fa-close"></i></a>
+   </li>
+   <li class="search-input">
+    <input id="search-tests" class="form-control" type="text" placeholder="Search...">
+   </li>
+  </ul>
+  <ul class="nav-right">
+   <li class="m-r-10"><a href="#"><span class="badge badge-primary">API Test Execution Report</span></a></li>
+   <li class="m-r-10">
+    <a href="#"><span class="badge badge-primary">5/7/2025 9:02:12 PM</span></a>
+   </li>
+  </ul>
+ </div>
+</div>
+   <div class="side-nav">
+ <div class="side-nav-inner">
+  <ul class="side-nav-menu">
+   <li class="nav-item dropdown" onclick="toggleView('test-view')">
+    <a id="nav-test" class="dropdown-toggle" href="#">
+     <span class="ico"><i class="fa fa-list"></i></span>
+    </a>
+   </li>
+   <li class="nav-item dropdown" onclick="toggleView('dashboard-view')">
+    <a id="nav-dashboard" class="dropdown-toggle" href="#">
+     <span class="ico"><i class="fa fa-bar-chart"></i></span>
+    </a>
+   </li>
+  </ul>
+ </div>
+</div>
+
+   <div class="vcontainer">
+    <div class="main-content">
+     
+
+<div class="test-wrapper row view test-view">
+  <div class="test-list">
+    <div class="test-list-tools">
+      <ul class="tools pull-left">
+        <li><a href="#"><span class="font-size-14">Tests</span></a></li>
+      </ul>
+      <ul class="tools text-right">
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-exclamation-circle"></i></a>
+          <ul id="status-toggle" class="dropdown-menu dropdown-md p-v-0">
+ <a class="dropdown-item" status="pass" href="#"><span>Pass</span><span class="status success"></span></a>  <a class="dropdown-item" status="fail" href="#"><span>Fail</span><span class="status danger"></span></a>             <div class="dropdown-divider"></div>
+            <a status="clear" class="dropdown-item" href="#"><span>Clear</span><span class="pull-right"><i class="fa fa-close"></i></span></a>
+          </ul>
+        </li>
+      </ul>
+    </div>
+    <div class="test-list-wrapper scrollable">
+      <ul class="test-list-item">
+        <li class="test-item" status="pass" test-id="1"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">SampleAPITest2</p>
+            <p class="text-sm">
+              <span>9:02:12 PM</span> / <span>2.87 ms</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+            <div class="detail-head">
+              <div class="p-v-10">
+                <div class="info">
+                  <h5 class="test-status text-pass">SampleAPITest2</h5>
+                  <span class='badge badge-success'>5/7/2025 9:02:12 PM</span>
+                  <span class='badge badge-danger'>5/7/2025 9:02:12 PM</span>
+                  <span class='badge badge-default'>2.87 ms</span>
+                  &middot; <span class='uri-anchor badge badge-default'>#test-id=1</span>
+                  <span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
+                  <span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
+                  <span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
+                </div>
+              </div>
+            </div>
+
+
+<div class="detail-body mt-4">
+
+
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>May 07, 2025 21:02:12</td>
+        <td>
+Starting test: SampleAPITest2        </td>
+      </tr>
+  </tbody>
+</table></div>
+          </div>
+        </li>
+        <li class="test-item" status="pass" test-id="2"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">Getcomments_ShouldReturn200</p>
+            <p class="text-sm">
+              <span>9:02:12 PM</span> / <span>0.05 ms</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+            <div class="detail-head">
+              <div class="p-v-10">
+                <div class="info">
+                  <h5 class="test-status text-pass">Getcomments_ShouldReturn200</h5>
+                  <span class='badge badge-success'>5/7/2025 9:02:12 PM</span>
+                  <span class='badge badge-danger'>5/7/2025 9:02:12 PM</span>
+                  <span class='badge badge-default'>0.05 ms</span>
+                  &middot; <span class='uri-anchor badge badge-default'>#test-id=2</span>
+                  <span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
+                  <span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
+                  <span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
+                </div>
+              </div>
+            </div>
+
+
+<div class="detail-body mt-4">
+
+
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>May 07, 2025 21:02:12</td>
+        <td>
+Starting test: Getcomments_ShouldReturn200        </td>
+      </tr>
+  </tbody>
+</table></div>
+          </div>
+        </li>
+        <li class="test-item" status="pass" test-id="3"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">UpdatePost_ShouldReturn200</p>
+            <p class="text-sm">
+              <span>9:02:12 PM</span> / <span>19.12 ms</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+            <div class="detail-head">
+              <div class="p-v-10">
+                <div class="info">
+                  <h5 class="test-status text-pass">UpdatePost_ShouldReturn200</h5>
+                  <span class='badge badge-success'>5/7/2025 9:02:12 PM</span>
+                  <span class='badge badge-danger'>5/7/2025 9:02:12 PM</span>
+                  <span class='badge badge-default'>19.12 ms</span>
+                  &middot; <span class='uri-anchor badge badge-default'>#test-id=3</span>
+                  <span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
+                  <span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
+                  <span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
+                </div>
+              </div>
+            </div>
+
+
+<div class="detail-body mt-4">
+
+
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>May 07, 2025 21:02:12</td>
+        <td>
+Starting test: UpdatePost_ShouldReturn200        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>May 07, 2025 21:02:12</td>
+        <td>
+Initializing tests with environment: staging         </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>May 07, 2025 21:02:12</td>
+        <td>
+Base URL: https://jsonplaceholder.typicode.com        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>May 07, 2025 21:02:12</td>
+        <td>
+Loaded test data for environment: staging         </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>May 07, 2025 21:02:12</td>
+        <td>
+Test data base URL: https://jsonplaceholder.typicode.com        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>May 07, 2025 21:02:12</td>
+        <td>
+Test data loaded successfully for environment: staging         </td>
+      </tr>
+  </tbody>
+</table></div>
+          </div>
+        </li>
+        <li class="test-item" status="pass" test-id="4"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">CreateValidPost_ShouldSucceed</p>
+            <p class="text-sm">
+              <span>9:02:12 PM</span> / <span>4920.05 ms</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+            <div class="detail-head">
+              <div class="p-v-10">
+                <div class="info">
+                  <h5 class="test-status text-pass">CreateValidPost_ShouldSucceed</h5>
+                  <span class='badge badge-success'>5/7/2025 9:02:12 PM</span>
+                  <span class='badge badge-danger'>5/7/2025 9:02:17 PM</span>
+                  <span class='badge badge-default'>4920.05 ms</span>
+                  &middot; <span class='uri-anchor badge badge-default'>#test-id=4</span>
+                  <span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
+                  <span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
+                  <span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
+                </div>
+              </div>
+            </div>
+
+
+<div class="detail-body mt-4">
+
+
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>May 07, 2025 21:02:12</td>
+        <td>
+Starting test: CreateValidPost_ShouldSucceed        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>May 07, 2025 21:02:12</td>
+        <td>
+Creating post with title: Staging Test Post        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>May 07, 2025 21:02:12</td>
+        <td>
+Initializing tests with environment: staging         </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>May 07, 2025 21:02:12</td>
+        <td>
+Base URL: https://jsonplaceholder.typicode.com        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>May 07, 2025 21:02:12</td>
+        <td>
+Loaded test data for environment: staging         </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>May 07, 2025 21:02:12</td>
+        <td>
+Test data base URL: https://jsonplaceholder.typicode.com        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>May 07, 2025 21:02:12</td>
+        <td>
+Test data loaded successfully for environment: staging         </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>May 07, 2025 21:02:16</td>
+        <td>
+Request: GET comments/2        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>May 07, 2025 21:02:16</td>
+        <td>
+Test CreateValidPost_ShouldSucceed completed successfully        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>May 07, 2025 21:02:16</td>
+        <td>
+Request: DELETE posts/1        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>May 07, 2025 21:02:16</td>
+        <td>
+Request: PUT posts/1        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>May 07, 2025 21:02:16</td>
+        <td>
+Request Body: {"title":"updated title","body":"updated body","userId":1}        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>May 07, 2025 21:02:16</td>
+        <td>
+Response Status: 200        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>May 07, 2025 21:02:16</td>
+        <td>
+Response Body: {
+  "postId": 1,
+  "id": 2,
+  "name": "quo vero reiciendis velit similique earum",
+  "email": "Jayne_Kuhic@sydney.com",
+  "body": "est natus enim nihil est dolore omnis voluptatem numquam\net omnis occaecati quod ullam at\nvoluptatem error expedita pariatur\nnihil sint nostrum voluptatem reiciendis et"
+}        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>May 07, 2025 21:02:16</td>
+        <td>
+Response Status: 200        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>May 07, 2025 21:02:16</td>
+        <td>
+Response Body: {}        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>May 07, 2025 21:02:16</td>
+        <td>
+Successfully retrieved comment with ID 2. Status: 200        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>May 07, 2025 21:02:16</td>
+        <td>
+Raw response body: {
+  "postId": 1,
+  "id": 2,
+  "name": "quo vero reiciendis velit similique earum",
+  "email": "Jayne_Kuhic@sydney.com",
+  "body": "est natus enim nihil est dolore omnis voluptatem numquam\net omnis occaecati quod ullam at\nvoluptatem error expedita pariatur\nnihil sint nostrum voluptatem reiciendis et"
+}        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>May 07, 2025 21:02:16</td>
+        <td>
+Response Status: 200        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>May 07, 2025 21:02:16</td>
+        <td>
+Response Body: {
+  "title": "updated title",
+  "body": "updated body",
+  "userId": 1,
+  "id": 1
+}        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>May 07, 2025 21:02:16</td>
+        <td>
+Test UpdatePost_ShouldReturn200 completed successfully        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>May 07, 2025 21:02:16</td>
+        <td>
+Deserialized comment: {"PostId":1,"Id":2,"Name":"quo vero reiciendis velit similique earum","Email":"Jayne_Kuhic@sydney.com","Body":"est natus enim nihil est dolore omnis voluptatem numquam\net omnis occaecati quod ullam at\nvoluptatem error expedita pariatur\nnihil sint nostrum voluptatem reiciendis et"}        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>May 07, 2025 21:02:16</td>
+        <td>
+Validating email format: Jayne_Kuhic@sydney.com        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>May 07, 2025 21:02:16</td>
+        <td>
+Email 'Jayne_Kuhic@sydney.com' is valid        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>May 07, 2025 21:02:16</td>
+        <td>
+Test Getcomments_ShouldReturn200 completed successfully        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>May 07, 2025 21:02:17</td>
+        <td>
+Request: GET posts/1        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>May 07, 2025 21:02:17</td>
+        <td>
+Response Status: 200        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>May 07, 2025 21:02:17</td>
+        <td>
+Response Body: {
+  "userId": 1,
+  "id": 1,
+  "title": "sunt aut facere repellat provident occaecati excepturi optio reprehenderit",
+  "body": "quia et suscipit\nsuscipit recusandae consequuntur expedita et cum\nreprehenderit molestiae ut ut quas totam\nnostrum rerum est autem sunt rem eveniet architecto"
+}        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>May 07, 2025 21:02:17</td>
+        <td>
+Initializing tests with environment: staging         </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>May 07, 2025 21:02:17</td>
+        <td>
+Base URL: https://jsonplaceholder.typicode.com        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>May 07, 2025 21:02:17</td>
+        <td>
+Loaded test data for environment: staging         </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>May 07, 2025 21:02:17</td>
+        <td>
+Test data base URL: https://jsonplaceholder.typicode.com        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>May 07, 2025 21:02:17</td>
+        <td>
+Test data loaded successfully for environment: staging         </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>May 07, 2025 21:02:17</td>
+        <td>
+Initializing tests with environment: staging         </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>May 07, 2025 21:02:17</td>
+        <td>
+Base URL: https://jsonplaceholder.typicode.com        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>May 07, 2025 21:02:17</td>
+        <td>
+Loaded test data for environment: staging         </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>May 07, 2025 21:02:17</td>
+        <td>
+Test data base URL: https://jsonplaceholder.typicode.com        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>May 07, 2025 21:02:17</td>
+        <td>
+Test data loaded successfully for environment: staging         </td>
+      </tr>
+  </tbody>
+</table></div>
+          </div>
+        </li>
+        <li class="test-item" status="fail" test-id="5"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">CreateInvalidPost_ShouldFail</p>
+            <p class="text-sm">
+              <span>9:02:17 PM</span> / <span>1504.34 ms</span>
+              <span class="badge fail-bg log float-right">Fail</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+            <div class="detail-head">
+              <div class="p-v-10">
+                <div class="info">
+                  <h5 class="test-status text-fail">CreateInvalidPost_ShouldFail</h5>
+                  <span class='badge badge-success'>5/7/2025 9:02:17 PM</span>
+                  <span class='badge badge-danger'>5/7/2025 9:02:19 PM</span>
+                  <span class='badge badge-default'>1504.34 ms</span>
+                  &middot; <span class='uri-anchor badge badge-default'>#test-id=5</span>
+                  <span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
+                  <span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
+                  <span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
+                </div>
+              </div>
+            </div>
+
+
+<div class="detail-body mt-4">
+
+
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>May 07, 2025 21:02:17</td>
+        <td>
+Starting test: CreateInvalidPost_ShouldFail        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>May 07, 2025 21:02:17</td>
+        <td>
+Attempting to create invalid post with empty title        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>May 07, 2025 21:02:17</td>
+        <td>
+Request: PUT posts/1        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>May 07, 2025 21:02:17</td>
+        <td>
+Request Body: {"title":"updated title","body":"updated body","userId":1}        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>May 07, 2025 21:02:17</td>
+        <td>
+Response Status: 200        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>May 07, 2025 21:02:17</td>
+        <td>
+Response Body: {
+  "title": "updated title",
+  "body": "updated body",
+  "userId": 1,
+  "id": 1
+}        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log fail-bg">Fail</span></td>
+        <td>May 07, 2025 21:02:18</td>
+        <td>
+Test CreateInvalidPost_ShouldFail failed: Assert.Throws() Failure: No exception was thrown
+Expected: typeof(System.Exception)        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>May 07, 2025 21:02:18</td>
+        <td>
+Request: POST posts        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>May 07, 2025 21:02:18</td>
+        <td>
+Request Body: {"title":"foo","body":"bar","userId":1}        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>May 07, 2025 21:02:18</td>
+        <td>
+Response Status: 201        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>May 07, 2025 21:02:18</td>
+        <td>
+Response Body: {
+  "title": "foo",
+  "body": "bar",
+  "userId": 1,
+  "id": 101
+}        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>May 07, 2025 21:02:18</td>
+        <td>
+Test SampleAPITest2 completed successfully        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>May 07, 2025 21:02:19</td>
+        <td>
+Initializing tests with environment: staging         </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>May 07, 2025 21:02:19</td>
+        <td>
+Base URL: https://jsonplaceholder.typicode.com        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>May 07, 2025 21:02:19</td>
+        <td>
+Loaded test data for environment: staging         </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>May 07, 2025 21:02:19</td>
+        <td>
+Test data base URL: https://jsonplaceholder.typicode.com        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>May 07, 2025 21:02:19</td>
+        <td>
+Test data loaded successfully for environment: staging         </td>
+      </tr>
+  </tbody>
+</table></div>
+          </div>
+        </li>
+        <li class="test-item" status="fail" test-id="6"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">CreateInvalidComment_ShouldFail</p>
+            <p class="text-sm">
+              <span>9:02:19 PM</span> / <span>1510.56 ms</span>
+              <span class="badge fail-bg log float-right">Fail</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+            <div class="detail-head">
+              <div class="p-v-10">
+                <div class="info">
+                  <h5 class="test-status text-fail">CreateInvalidComment_ShouldFail</h5>
+                  <span class='badge badge-success'>5/7/2025 9:02:19 PM</span>
+                  <span class='badge badge-danger'>5/7/2025 9:02:20 PM</span>
+                  <span class='badge badge-default'>1510.56 ms</span>
+                  &middot; <span class='uri-anchor badge badge-default'>#test-id=6</span>
+                  <span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
+                  <span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
+                  <span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
+                </div>
+              </div>
+            </div>
+
+
+<div class="detail-body mt-4">
+
+
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>May 07, 2025 21:02:19</td>
+        <td>
+Starting test: CreateInvalidComment_ShouldFail        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>May 07, 2025 21:02:19</td>
+        <td>
+Attempting to create invalid comment with invalid email        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log fail-bg">Fail</span></td>
+        <td>May 07, 2025 21:02:20</td>
+        <td>
+Test CreateInvalidComment_ShouldFail failed: Assert.Throws() Failure: No exception was thrown
+Expected: typeof(System.Exception)        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>May 07, 2025 21:02:20</td>
+        <td>
+Initializing tests with environment: staging         </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>May 07, 2025 21:02:20</td>
+        <td>
+Base URL: https://jsonplaceholder.typicode.com        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>May 07, 2025 21:02:20</td>
+        <td>
+Loaded test data for environment: staging         </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>May 07, 2025 21:02:20</td>
+        <td>
+Test data base URL: https://jsonplaceholder.typicode.com        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>May 07, 2025 21:02:20</td>
+        <td>
+Test data loaded successfully for environment: staging         </td>
+      </tr>
+  </tbody>
+</table></div>
+          </div>
+        </li>
+        <li class="test-item" status="pass" test-id="7"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">CreateValidComment_ShouldSucceed</p>
+            <p class="text-sm">
+              <span>9:02:20 PM</span> / <span>823.82 ms</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+            <div class="detail-head">
+              <div class="p-v-10">
+                <div class="info">
+                  <h5 class="test-status text-pass">CreateValidComment_ShouldSucceed</h5>
+                  <span class='badge badge-success'>5/7/2025 9:02:20 PM</span>
+                  <span class='badge badge-danger'>5/7/2025 9:02:21 PM</span>
+                  <span class='badge badge-default'>823.82 ms</span>
+                  &middot; <span class='uri-anchor badge badge-default'>#test-id=7</span>
+                  <span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
+                  <span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
+                  <span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
+                </div>
+              </div>
+            </div>
+
+
+<div class="detail-body mt-4">
+
+
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>May 07, 2025 21:02:20</td>
+        <td>
+Starting test: CreateValidComment_ShouldSucceed        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>May 07, 2025 21:02:20</td>
+        <td>
+Creating comment for post 1        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>May 07, 2025 21:02:21</td>
+        <td>
+Test CreateValidComment_ShouldSucceed completed successfully        </td>
+      </tr>
+  </tbody>
+</table></div>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <div class="test-content scrollable">
+    <div class="test-content-tools">
+      <ul><li><a class="back-to-test" href="#"><i class="fa fa-arrow-left"></i></a></li></ul>
+    </div>
+    <div class="test-content-detail"><div class="detail-body"></div></div>
+  </div>
+</div>
+
+     
+
+<div class="container-fluid p-4 view dashboard-view">
+  <div class="row">
+    <div class="col-md-3">
+      <div class="card"><div class="card-body">
+          <p class="m-b-0">Started</p>
+          <h3>5/7/2025 9:02:12 PM</h3>
+      </div></div>
+    </div>
+    <div class="col-md-3">
+      <div class="card"><div class="card-body">
+          <p class="m-b-0">Ended</p>
+          <h3>5/7/2025 9:02:21 PM</h3>
+      </div></div>
+    </div>
+    <div class="col-md-3">
+      <div class="card"><div class="card-body">
+          <p class="m-b-0 text-pass">Tests Passed</p>
+          <h3>5</h3>
+      </div></div>
+    </div>
+    <div class="col-md-3">
+      <div class="card"><div class="card-body">
+          <p class="m-b-0 text-fail">Tests Failed</p>
+          <h3>2</h3>
+      </div></div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-6">
+      <div class="card">
+        <div class="card-header">
+          <h6 class="card-title">Tests</h6>
+        </div>
+        <div class="card-body">
+          <div class="">
+            <canvas id='parent-analysis' width='115' height='90'></canvas>
+          </div>
+        </div>
+        <div class="card-footer">
+          <div><small data-tooltip='0%'>
+            <b>5</b> tests passed
+            </small>
+          </div>
+          <div>
+            <small data-tooltip='0%'><b>2</b> tests failed, 
+            <b>0</b> skipped, <b data-tooltip='0%'>0</b> others
+            </small>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-6">
+      <div class="card">
+        <div class="card-header">
+          <h6 class="card-title">Log events</h6>
+        </div>
+        <div class="card-body">
+          <div class="">
+            <canvas id='events-analysis' width='115' height='90'></canvas>
+          </div>
+        </div>
+        <div class="card-footer">
+          <div><small data-tooltip='0%'><b>7</b> events passed</small></div>
+          <div>
+            <small data-tooltip='0%'><b>2</b> events failed, 
+            <b data-tooltip='%'>65</b> others
+            </small>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="row"><div class="col-md-12">
+    <div class="card"><div class="card-header"><p>Timeline</p></div>
+      <div class="card-body pt-0"><div>
+        <canvas id="timeline" height="120"></canvas>
+      </div></div>
+    </div>
+  </div></div>
+  <script>
+	var timeline = { "SampleAPITest2":2.8715,"Getcomments_ShouldReturn200":0.0474,"UpdatePost_ShouldReturn200":19.1218,"CreateValidPost_ShouldSucceed":4920.0467,"CreateInvalidPost_ShouldFail":1504.3374,"CreateInvalidComment_ShouldFail":1510.5581,"CreateValidComment_ShouldSucceed":823.8205 };
+  </script>
+  <div class="row">
+      <div class="col-md-4 sysenv-container">
+      <div class="card">
+        <div class="card-header"><p>System/Environment</p></div>
+        <div class="card-body pb-0 pt-0"><table class="table table-sm table-bordered">
+          <thead><tr class="bg-gray"><th>Name</th><th>Value</th></tr></thead>
+          <tbody>
+            <tr>
+              <td>Environment</td>
+              <td>QA</td>
+            </tr>
+            <tr>
+              <td>Browser</td>
+              <td>Playwright</td>
+            </tr>
+            <tr>
+              <td>Framework</td>
+              <td>xUnit</td>
+            </tr>
+          </tbody>
+        </table></div>
+      </div>
+    </div>
+  </div>
+</div>
+<script>
+  var statusGroup = {
+    parentCount: 7,
+    childCount: 0,
+    grandChildCount: 0,
+    eventsCount: 74,
+
+passParent:5,failParent:2,warningParent:0,skipParent:0,    
+passChild:0,failChild:0,warningChild:0,skipChild:0,infoChild:0,    
+passGrandChild:0,failGrandChild:0,warningGrandChild:0,skipGrandChild:0,infoGrandChild:0,    
+passEvents:7,failEvents:2,warningEvents:0,skipEvents:0,infoEvents:65,  };
+</script>
+
+    </div>
+   </div>
+  </div>
+ </div>
+ <script src="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@c439bdbc7bade3d85af3b90e9e69c30ebc87445f/spark/js/spark-script.js"></script>
+<script type='text/javascript'></script>
+</body>
+</html>

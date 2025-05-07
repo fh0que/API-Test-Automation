@@ -3,14 +3,17 @@ using Xunit;
 using System;
 using System.Text.Json;
 using PlaywrightTests.Utilities;
+using PlaywrightTests.PageObjects;
 
-public class PutRequestTests : TBase
+namespace PlaywrightTests.test.posts;
+
+public class PutRequestTest : TBase
 {
-    private readonly PostPage _postPage;
+    private readonly PostsApi _postsApi;    
 
-    public PutRequestTests()
+    public PutRequestTest()
     {
-        _postPage = new PostPage(ApiClient);
+        _postsApi = new PostsApi(ApiClient);
     }
 
     [Fact]
@@ -22,7 +25,7 @@ public class PutRequestTests : TBase
             LogInfo($"Starting test: {nameof(UpdatePost_ShouldReturn200)}");
 
             var post = new { title = "updated title", body = "updated body", userId = 1 };
-            var response = await _postPage.UpdatePostAsync(1, post);
+            var response = await _postsApi.UpdatePostAsync(1, post);
             
             LogRequest("PUT", "posts/1", JsonSerializer.Serialize(post));
             LogResponse(response.Status, await response.TextAsync());

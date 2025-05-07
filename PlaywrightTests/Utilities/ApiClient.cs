@@ -5,6 +5,8 @@ using System.Threading.Tasks;
 using Microsoft.Playwright;
 using Serilog;
 
+namespace PlaywrightTests.Utilities;
+
 public class ApiClient
 {
     private readonly IAPIRequestContext _apiRequestContext;
@@ -118,5 +120,23 @@ public class ApiClient
             LogError(ex);
             throw new ApplicationException($"DELETE request failed for {endpoint}.", ex);
         }
+    }
+
+    public async Task<PostData> CreatePostAsync(PostData post)
+    {
+        var response = await _apiRequestContext.PostAsync($"{_baseUrl}/posts", new APIRequestContextOptions
+        {
+            Data = JsonSerializer.Serialize(post)
+        });
+        return await response.JsonAsync<PostData>();
+    }
+
+    public async Task<CommentData> CreateCommentAsync(CommentData comment)
+    {
+        var response = await _apiRequestContext.PostAsync($"{_baseUrl}/comments", new APIRequestContextOptions
+        {
+            Data = JsonSerializer.Serialize(comment)
+        });
+        return await response.JsonAsync<CommentData>();
     }
 }

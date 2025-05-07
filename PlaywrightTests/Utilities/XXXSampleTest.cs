@@ -4,7 +4,7 @@ using Allure.Xunit.Attributes;
 using PlaywrightTests.Utilities;
 using System;
 using System.Threading.Tasks;
-
+using PlaywrightTests.PageObjects;
 namespace PlaywrightTests.Tests
 {
     public class SampleTest : TBase

@@ -1,0 +1,68 @@
+[
+  {
+    "Name": "SampleAPITest2",
+    "Status": "",
+    "StartTime": "2025-05-07 20:30:35",
+    "EndTime": "",
+    "Logs": [
+      "[INFO] Starting test: SampleAPITest2"
+    ]
+  },
+  {
+    "Name": "UpdatePost_ShouldReturn200",
+    "Status": "",
+    "StartTime": "2025-05-07 20:30:35",
+    "EndTime": "",
+    "Logs": [
+      "[INFO] Creating post with title: Test Post Title",
+      "[INFO] Starting test: UpdatePost_ShouldReturn200"
+    ]
+  },
+  {
+    "Name": "Getcomments_ShouldReturn200",
+    "Status": "PASS",
+    "StartTime": "2025-05-07 20:30:35",
+    "EndTime": "2025-05-07 20:30:44",
+    "Logs": [
+      "[INFO] Starting test: Getcomments_ShouldReturn200",
+      "[PASS] Successfully created valid post",
+      "[REQUEST] Request: PUT posts/1",
+      "[REQUEST] Request Body: {\u0022title\u0022:\u0022updated title\u0022,\u0022body\u0022:\u0022updated body\u0022,\u0022userId\u0022:1}",
+      "[REQUEST] Request: DELETE posts/1",
+      "[REQUEST] Request: GET comments/2",
+      "[RESPONSE] Status: 200",
+      "[RESPONSE] Body: {\n  \u0022postId\u0022: 1,\n  \u0022id\u0022: 2,\n  \u0022name\u0022: \u0022quo vero reiciendis velit similique earum\u0022,\n  \u0022email\u0022: \u0022Jayne_Kuhic@sydney.com\u0022,\n  \u0022body\u0022: \u0022est natus enim nihil est dolore omnis voluptatem numquam\\net omnis occaecati quod ullam at\\nvoluptatem error expedita pariatur\\nnihil sint nostrum voluptatem reiciendis et\u0022\n}",
+      "[PASS] Successfully retrieved comment with ID 2. Status: 200",
+      "[INFO] Raw response body: {\n  \u0022postId\u0022: 1,\n  \u0022id\u0022: 2,\n  \u0022name\u0022: \u0022quo vero reiciendis velit similique earum\u0022,\n  \u0022email\u0022: \u0022Jayne_Kuhic@sydney.com\u0022,\n  \u0022body\u0022: \u0022est natus enim nihil est dolore omnis voluptatem numquam\\net omnis occaecati quod ullam at\\nvoluptatem error expedita pariatur\\nnihil sint nostrum voluptatem reiciendis et\u0022\n}",
+      "[RESPONSE] Status: 200",
+      "[RESPONSE] Body: {\n  \u0022title\u0022: \u0022updated title\u0022,\n  \u0022body\u0022: \u0022updated body\u0022,\n  \u0022userId\u0022: 1,\n  \u0022id\u0022: 1\n}",
+      "[PASS] Test UpdatePost_ShouldReturn200 completed successfully",
+      "[INFO] Deserialized comment: {\u0022PostId\u0022:1,\u0022Id\u0022:2,\u0022Name\u0022:\u0022quo vero reiciendis velit similique earum\u0022,\u0022Email\u0022:\u0022Jayne_Kuhic@sydney.com\u0022,\u0022Body\u0022:\u0022est natus enim nihil est dolore omnis voluptatem numquam\\net omnis occaecati quod ullam at\\nvoluptatem error expedita pariatur\\nnihil sint nostrum voluptatem reiciendis et\u0022}",
+      "[INFO] Validating email format: Jayne_Kuhic@sydney.com",
+      "[RESPONSE] Status: 200",
+      "[RESPONSE] Body: {}",
+      "[PASS] Email \u0027Jayne_Kuhic@sydney.com\u0027 is valid",
+      "[PASS] Test Getcomments_ShouldReturn200 completed successfully",
+      "[REQUEST] Request: GET posts/1",
+      "[RESPONSE] Status: 200",
+      "[RESPONSE] Body: {\n  \u0022userId\u0022: 1,\n  \u0022id\u0022: 1,\n  \u0022title\u0022: \u0022sunt aut facere repellat provident occaecati excepturi optio reprehenderit\u0022,\n  \u0022body\u0022: \u0022quia et suscipit\\nsuscipit recusandae consequuntur expedita et cum\\nreprehenderit molestiae ut ut quas totam\\nnostrum rerum est autem sunt rem eveniet architecto\u0022\n}",
+      "[INFO] Loaded test data for environment: development",
+      "[INFO] Loaded test data for environment: development",
+      "[INFO] Attempting to create invalid post with empty title",
+      "[REQUEST] Request: PUT posts/1",
+      "[REQUEST] Request Body: {\u0022title\u0022:\u0022updated title\u0022,\u0022body\u0022:\u0022updated body\u0022,\u0022userId\u0022:1}",
+      "[RESPONSE] Status: 200",
+      "[RESPONSE] Body: {\n  \u0022title\u0022: \u0022updated title\u0022,\n  \u0022body\u0022: \u0022updated body\u0022,\n  \u0022userId\u0022: 1,\n  \u0022id\u0022: 1\n}",
+      "[INFO] Loaded test data for environment: development",
+      "[INFO] Attempting to create invalid comment with invalid email",
+      "[REQUEST] Request: POST posts",
+      "[REQUEST] Request Body: {\u0022title\u0022:\u0022foo\u0022,\u0022body\u0022:\u0022bar\u0022,\u0022userId\u0022:1}",
+      "[RESPONSE] Status: 201",
+      "[RESPONSE] Body: {\n  \u0022title\u0022: \u0022foo\u0022,\n  \u0022body\u0022: \u0022bar\u0022,\n  \u0022userId\u0022: 1,\n  \u0022id\u0022: 101\n}",
+      "[PASS] Test SampleAPITest2 completed successfully",
+      "[INFO] Loaded test data for environment: development",
+      "[INFO] Creating comment for post 1",
+      "[PASS] Successfully created valid comment"
+    ]
+  }
+]

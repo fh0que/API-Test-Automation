@@ -1,0 +1,132 @@
+[
+  {
+    "Name": "SampleAPITest2",
+    "Status": "",
+    "StartTime": "2025-05-07 21:02:12",
+    "EndTime": "",
+    "Logs": [
+      "[INFO] Starting test: SampleAPITest2"
+    ]
+  },
+  {
+    "Name": "Getcomments_ShouldReturn200",
+    "Status": "",
+    "StartTime": "2025-05-07 21:02:12",
+    "EndTime": "",
+    "Logs": [
+      "[INFO] Starting test: Getcomments_ShouldReturn200"
+    ]
+  },
+  {
+    "Name": "UpdatePost_ShouldReturn200",
+    "Status": "",
+    "StartTime": "2025-05-07 21:02:12",
+    "EndTime": "",
+    "Logs": [
+      "[INFO] Starting test: UpdatePost_ShouldReturn200",
+      "[INFO] Initializing tests with environment: staging ",
+      "[INFO] Base URL: https://jsonplaceholder.typicode.com",
+      "[INFO] Loaded test data for environment: staging ",
+      "[INFO] Test data base URL: https://jsonplaceholder.typicode.com",
+      "[INFO] Test data loaded successfully for environment: staging "
+    ]
+  },
+  {
+    "Name": "CreateValidPost_ShouldSucceed",
+    "Status": "PASS",
+    "StartTime": "2025-05-07 21:02:12",
+    "EndTime": "2025-05-07 21:02:16",
+    "Logs": [
+      "[INFO] Starting test: CreateValidPost_ShouldSucceed",
+      "[INFO] Creating post with title: Staging Test Post",
+      "[INFO] Initializing tests with environment: staging ",
+      "[INFO] Base URL: https://jsonplaceholder.typicode.com",
+      "[INFO] Loaded test data for environment: staging ",
+      "[INFO] Test data base URL: https://jsonplaceholder.typicode.com",
+      "[INFO] Test data loaded successfully for environment: staging ",
+      "[REQUEST] Request: GET comments/2",
+      "[PASS] Test CreateValidPost_ShouldSucceed completed successfully",
+      "[REQUEST] Request: DELETE posts/1",
+      "[REQUEST] Request: PUT posts/1",
+      "[REQUEST] Request Body: {\u0022title\u0022:\u0022updated title\u0022,\u0022body\u0022:\u0022updated body\u0022,\u0022userId\u0022:1}",
+      "[RESPONSE] Status: 200",
+      "[RESPONSE] Body: {\n  \u0022postId\u0022: 1,\n  \u0022id\u0022: 2,\n  \u0022name\u0022: \u0022quo vero reiciendis velit similique earum\u0022,\n  \u0022email\u0022: \u0022Jayne_Kuhic@sydney.com\u0022,\n  \u0022body\u0022: \u0022est natus enim nihil est dolore omnis voluptatem numquam\\net omnis occaecati quod ullam at\\nvoluptatem error expedita pariatur\\nnihil sint nostrum voluptatem reiciendis et\u0022\n}",
+      "[RESPONSE] Status: 200",
+      "[RESPONSE] Body: {}",
+      "[PASS] Successfully retrieved comment with ID 2. Status: 200",
+      "[INFO] Raw response body: {\n  \u0022postId\u0022: 1,\n  \u0022id\u0022: 2,\n  \u0022name\u0022: \u0022quo vero reiciendis velit similique earum\u0022,\n  \u0022email\u0022: \u0022Jayne_Kuhic@sydney.com\u0022,\n  \u0022body\u0022: \u0022est natus enim nihil est dolore omnis voluptatem numquam\\net omnis occaecati quod ullam at\\nvoluptatem error expedita pariatur\\nnihil sint nostrum voluptatem reiciendis et\u0022\n}",
+      "[RESPONSE] Status: 200",
+      "[RESPONSE] Body: {\n  \u0022title\u0022: \u0022updated title\u0022,\n  \u0022body\u0022: \u0022updated body\u0022,\n  \u0022userId\u0022: 1,\n  \u0022id\u0022: 1\n}",
+      "[PASS] Test UpdatePost_ShouldReturn200 completed successfully",
+      "[INFO] Deserialized comment: {\u0022PostId\u0022:1,\u0022Id\u0022:2,\u0022Name\u0022:\u0022quo vero reiciendis velit similique earum\u0022,\u0022Email\u0022:\u0022Jayne_Kuhic@sydney.com\u0022,\u0022Body\u0022:\u0022est natus enim nihil est dolore omnis voluptatem numquam\\net omnis occaecati quod ullam at\\nvoluptatem error expedita pariatur\\nnihil sint nostrum voluptatem reiciendis et\u0022}",
+      "[INFO] Validating email format: Jayne_Kuhic@sydney.com",
+      "[PASS] Email \u0027Jayne_Kuhic@sydney.com\u0027 is valid",
+      "[PASS] Test Getcomments_ShouldReturn200 completed successfully",
+      "[REQUEST] Request: GET posts/1",
+      "[RESPONSE] Status: 200",
+      "[RESPONSE] Body: {\n  \u0022userId\u0022: 1,\n  \u0022id\u0022: 1,\n  \u0022title\u0022: \u0022sunt aut facere repellat provident occaecati excepturi optio reprehenderit\u0022,\n  \u0022body\u0022: \u0022quia et suscipit\\nsuscipit recusandae consequuntur expedita et cum\\nreprehenderit molestiae ut ut quas totam\\nnostrum rerum est autem sunt rem eveniet architecto\u0022\n}",
+      "[INFO] Initializing tests with environment: staging ",
+      "[INFO] Base URL: https://jsonplaceholder.typicode.com",
+      "[INFO] Loaded test data for environment: staging ",
+      "[INFO] Test data base URL: https://jsonplaceholder.typicode.com",
+      "[INFO] Test data loaded successfully for environment: staging ",
+      "[INFO] Initializing tests with environment: staging ",
+      "[INFO] Base URL: https://jsonplaceholder.typicode.com",
+      "[INFO] Loaded test data for environment: staging ",
+      "[INFO] Test data base URL: https://jsonplaceholder.typicode.com",
+      "[INFO] Test data loaded successfully for environment: staging "
+    ]
+  },
+  {
+    "Name": "CreateInvalidPost_ShouldFail",
+    "Status": "PASS",
+    "StartTime": "2025-05-07 21:02:17",
+    "EndTime": "2025-05-07 21:02:18",
+    "Logs": [
+      "[INFO] Starting test: CreateInvalidPost_ShouldFail",
+      "[INFO] Attempting to create invalid post with empty title",
+      "[REQUEST] Request: PUT posts/1",
+      "[REQUEST] Request Body: {\u0022title\u0022:\u0022updated title\u0022,\u0022body\u0022:\u0022updated body\u0022,\u0022userId\u0022:1}",
+      "[RESPONSE] Status: 200",
+      "[RESPONSE] Body: {\n  \u0022title\u0022: \u0022updated title\u0022,\n  \u0022body\u0022: \u0022updated body\u0022,\n  \u0022userId\u0022: 1,\n  \u0022id\u0022: 1\n}",
+      "[FAIL] Test CreateInvalidPost_ShouldFail failed: Assert.Throws() Failure: No exception was thrown\r\nExpected: typeof(System.Exception)",
+      "[REQUEST] Request: POST posts",
+      "[REQUEST] Request Body: {\u0022title\u0022:\u0022foo\u0022,\u0022body\u0022:\u0022bar\u0022,\u0022userId\u0022:1}",
+      "[RESPONSE] Status: 201",
+      "[RESPONSE] Body: {\n  \u0022title\u0022: \u0022foo\u0022,\n  \u0022body\u0022: \u0022bar\u0022,\n  \u0022userId\u0022: 1,\n  \u0022id\u0022: 101\n}",
+      "[PASS] Test SampleAPITest2 completed successfully",
+      "[INFO] Initializing tests with environment: staging ",
+      "[INFO] Base URL: https://jsonplaceholder.typicode.com",
+      "[INFO] Loaded test data for environment: staging ",
+      "[INFO] Test data base URL: https://jsonplaceholder.typicode.com",
+      "[INFO] Test data loaded successfully for environment: staging "
+    ]
+  },
+  {
+    "Name": "CreateInvalidComment_ShouldFail",
+    "Status": "FAIL",
+    "StartTime": "2025-05-07 21:02:19",
+    "EndTime": "2025-05-07 21:02:20",
+    "Logs": [
+      "[INFO] Starting test: CreateInvalidComment_ShouldFail",
+      "[INFO] Attempting to create invalid comment with invalid email",
+      "[FAIL] Test CreateInvalidComment_ShouldFail failed: Assert.Throws() Failure: No exception was thrown\r\nExpected: typeof(System.Exception)",
+      "[INFO] Initializing tests with environment: staging ",
+      "[INFO] Base URL: https://jsonplaceholder.typicode.com",
+      "[INFO] Loaded test data for environment: staging ",
+      "[INFO] Test data base URL: https://jsonplaceholder.typicode.com",
+      "[INFO] Test data loaded successfully for environment: staging "
+    ]
+  },
+  {
+    "Name": "CreateValidComment_ShouldSucceed",
+    "Status": "PASS",
+    "StartTime": "2025-05-07 21:02:20",
+    "EndTime": "2025-05-07 21:02:21",
+    "Logs": [
+      "[INFO] Starting test: CreateValidComment_ShouldSucceed",
+      "[INFO] Creating comment for post 1",
+      "[PASS] Test CreateValidComment_ShouldSucceed completed successfully"
+    ]
+  }
+]

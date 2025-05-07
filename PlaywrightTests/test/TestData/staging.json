@@ -1,0 +1,31 @@
+{
+    "baseUrl": "https://jsonplaceholder.typicode.com",
+    "testData": {
+        "posts": {
+            "validPost": {
+                "title": "Staging Test Post",
+                "body": "This is a staging test post body",
+                "userId": 1
+            },
+            "invalidPost": {
+                "title": "",
+                "body": "",
+                "userId": -1
+            }
+        },
+        "comments": {
+            "validComment": {
+                "postId": 1,
+                "name": "Staging Test Comment",
+                "email": "staging-test@example.com",
+                "body": "This is a staging test comment"
+            },
+            "invalidComment": {
+                "postId": -1,
+                "name": "",
+                "email": "invalid-email",
+                "body": ""
+            }
+        }
+    }
+} 

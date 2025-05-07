@@ -19,6 +19,8 @@ public class TBase : IAsyncLifetime
     protected IBrowser Browser;
     protected IPage Page;
     private readonly string ScreenshotDirectory;
+    private TestData _testData;
+    protected TestData TestData => _testData;
 
     public TBase()
     {
@@ -87,9 +89,43 @@ public class TBase : IAsyncLifetime
 
     public async Task InitializeAsync()
     {
-        // Initialize ExtentReports if needed
-        ExtentManager.GetExtent();
-        await InitializeBrowser();
+        try
+        {
+            // Initialize ExtentReports if needed
+            ExtentManager.GetExtent();
+            await InitializeBrowser();
+
+            var env = Environment.GetEnvironmentVariable("TEST_ENV") ?? "development";
+            LogInfo($"Initializing tests with environment: {env}");
+            LogInfo($"Base URL: {BaseUrl}");
+            
+            await LoadTestDataAsync(env);
+            LogInfo($"Test data loaded successfully for environment: {env}");
+        }
+        catch (Exception ex)
+        {
+            LogFail($"Failed to initialize test: {ex.Message}");
+            throw;
+        }
+    }
+
+    protected async Task LoadTestDataAsync(string environment = "development")
+    {
+        try
+        {
+            _testData = await TestDataLoader.LoadTestDataAsync(environment);
+            if (_testData == null)
+            {
+                throw new Exception($"Failed to load test data for environment: {environment}");
+            }
+            LogInfo($"Loaded test data for environment: {environment}");
+            LogInfo($"Test data base URL: {_testData.BaseUrl}");
+        }
+        catch (Exception ex)
+        {
+            LogFail($"Failed to load test data: {ex.Message}");
+            throw;
+        }
     }
 
     public async Task DisposeAsync()
